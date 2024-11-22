@@ -1,0 +1,16 @@
+erDiagram
+    USER ||--o{ PRODUCT : manages
+    USER {
+        int id PK
+        string email UK
+        string password
+        string name
+        enum role
+    }
+    PRODUCT {
+        int id PK
+        string name
+        string description
+        float price
+        int quantity
+    }
